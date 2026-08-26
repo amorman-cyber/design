@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #4E7A12; text-decoration: none; }
+    a:hover { color: #3D5F0E; text-decoration: underline; }
+    .mono { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 12px; color: #5E7A8C; letter-spacing: 0.01em; }
+    .row { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 32px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid #E7ECEF; }
+  </style>
+</helmet>
+
+<div style="width: 1200px; height: 2000px; background: #FFFFFF; box-sizing: border-box; padding: 72px 80px 80px 80px; display: flex; flex-direction: column; gap: 48px;">
+
+  <div>
+    <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #4E7A12; margin-bottom: 14px;">02 &mdash; Foundations</div>
+    <h1 style="font-size: 54px; line-height: 1.02; font-weight: 800; letter-spacing: -0.025em; color: #2A3B47; margin: 0 0 16px 0;">Typography</h1>
+    <p style="font-size: 18px; line-height: 1.55; color: #41596B; margin: 0; max-width: 700px; text-wrap: pretty;">One squared grotesque, two widths. It shares the mark&rsquo;s flat terminals and tight geometry, so headlines sit next to the logo without arguing with it.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+    <div style="border: 1px solid #E7ECEF; padding: 24px 26px; box-sizing: border-box;">
+      <div style="font-size: 46px; font-weight: 800; color: #2A3B47; line-height: 1; letter-spacing: -0.02em;">Archivo</div>
+      <div style="font-size: 13px; line-height: 1.55; color: #5E7A8C; margin-top: 14px;">Primary family. Weights 400 / 500 / 600 / 700 / 800. Headlines, body, buttons, everything by default.</div>
+      <div class="mono" style="margin-top: 12px;">'Archivo', 'Helvetica Neue', Arial, sans-serif</div>
+    </div>
+    <div style="border: 1px solid #E7ECEF; padding: 24px 26px; box-sizing: border-box;">
+      <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 37px; font-weight: 700; color: #2A3B47; line-height: 1; letter-spacing: 0;">Archivo Narrow</div>
+      <div style="font-size: 13px; line-height: 1.55; color: #5E7A8C; margin-top: 14px;">Eyebrows, kickers, tags, data labels &mdash; the condensed voice from the logo tagline. Never body copy.</div>
+      <div class="mono" style="margin-top: 12px;">'Archivo Narrow', 'Arial Narrow', Arial, sans-serif</div>
+    </div>
+    <div style="background: #F5F7F4; border: 1px solid #E7ECEF; padding: 24px 26px; box-sizing: border-box;">
+      <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-bottom: 10px;">If you have the licensed fonts</div>
+      <div style="font-size: 13px; line-height: 1.6; color: #41596B;">Print and licensed work should set <strong>Klavika</strong> and <strong>Klavika Condensed</strong>, the faces the wordmark is drawn from. Archivo is the web and desktop stand-in and shares its metrics closely enough to swap one for the other.</div>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #41596B; padding-bottom: 12px; border-bottom: 1px solid #E7ECEF;">The scale</div>
+
+    <div class="row">
+      <div style="font-size: 68px; font-weight: 800; letter-spacing: -0.03em; line-height: 0.98; color: #2A3B47;">Every kid, everywhere</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Display</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">68 / 0.98 / -0.03em<br>Archivo 800</div></div>
+    </div>
+
+    <div class="row">
+      <div style="font-size: 44px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: #2A3B47;">Camp scholarships are open</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Heading 1</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">44 / 1.05 / -0.025em<br>Archivo 800</div></div>
+    </div>
+
+    <div class="row">
+      <div style="font-size: 30px; font-weight: 700; letter-spacing: -0.018em; line-height: 1.15; color: #2A3B47;">What your gift does this fall</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Heading 2</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">30 / 1.15 / -0.018em<br>Archivo 700</div></div>
+    </div>
+
+    <div class="row">
+      <div style="font-size: 21px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.3; color: #41596B;">Getting your area ready</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Heading 3</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">21 / 1.3 / -0.01em<br>Archivo 700</div></div>
+    </div>
+
+    <div class="row">
+      <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #4E7A12;">From the field</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Eyebrow</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">14 / 1.2 / 0.18em / caps<br>Archivo Narrow 700</div></div>
+    </div>
+
+    <div class="row">
+      <div style="font-size: 21px; font-weight: 400; line-height: 1.55; color: #41596B; max-width: 640px;">A leader shows up at the same lunch table for a year before anything happens. That year is the work.</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Lead paragraph</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">21 / 1.55 / 0<br>Archivo 400</div></div>
+    </div>
+
+    <div class="row">
+      <div style="font-size: 16px; font-weight: 400; line-height: 1.65; color: #41596B; max-width: 640px;">Body copy runs at sixteen with generous leading and a measure of sixty to seventy-five characters. Longer lines than that and readers lose their place returning to the left margin &mdash; set a max-width, not a column count.</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Body</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">16 / 1.65 / 0<br>Archivo 400</div></div>
+    </div>
+
+    <div class="row">
+      <div style="font-size: 13px; font-weight: 400; line-height: 1.55; color: #5E7A8C;">Caption, metadata and helper text. Slate 60 keeps it quiet and still passes at 4.5:1.</div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Caption</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">13 / 1.55 / 0<br>Archivo 400, Slate 60</div></div>
+    </div>
+
+    <div class="row" style="border-bottom: none;">
+      <div style="display: flex; align-items: center; gap: 28px;">
+        <span style="font-size: 16px; font-weight: 600; color: #4E7A12; text-decoration: underline; text-underline-offset: 3px;">Read Kylie&rsquo;s story</span>
+        <span style="font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: #231F20; background: #8CC63F; padding: 13px 26px; display: inline-block;">GIVE MONTHLY</span>
+      </div>
+      <div><div style="font-size: 14px; font-weight: 700; color: #2A3B47;">Link &amp; button label</div><div class="mono" style="margin-top: 5px; line-height: 1.7;">16 / 600 / Deep Green<br>15 / 700 / 0.04em / Ink</div></div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 24px;">
+    <div style="flex-grow: 1; background: #F5F7F4; padding: 20px 24px; box-sizing: border-box;">
+      <div style="font-size: 14px; font-weight: 700; color: #2A3B47; margin-bottom: 7px;">Sentence case for headlines</div>
+      <div style="font-size: 13px; line-height: 1.6; color: #41596B;">Title Case Reads Like An Announcement. Sentence case reads like a person. Caps are reserved for eyebrows and button labels, always with 0.14em tracking or more.</div>
+    </div>
+    <div style="flex-grow: 1; background: #F5F7F4; padding: 20px 24px; box-sizing: border-box;">
+      <div style="font-size: 14px; font-weight: 700; color: #2A3B47; margin-bottom: 7px;">Floors</div>
+      <div style="font-size: 13px; line-height: 1.6; color: #41596B;">12px on screen, 12pt (16px at 96ppi) for print body copy. Anything smaller is a legal line, not information.</div>
+    </div>
+    <div style="flex-grow: 1; background: #F5F7F4; padding: 20px 24px; box-sizing: border-box;">
+      <div style="font-size: 14px; font-weight: 700; color: #2A3B47; margin-bottom: 7px;">Two sizes per block</div>
+      <div style="font-size: 13px; line-height: 1.6; color: #41596B;">A heading and its body. Reach for weight and color to make a third level before you reach for a third size.</div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

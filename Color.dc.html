@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #4E7A12; text-decoration: none; }
+    a:hover { color: #3D5F0E; text-decoration: underline; }
+    .mono { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 12px; letter-spacing: 0.01em; }
+  </style>
+</helmet>
+
+<div style="width: 1200px; height: 1660px; background: #FFFFFF; box-sizing: border-box; padding: 72px 80px 80px 80px; display: flex; flex-direction: column; gap: 56px;">
+
+  <div>
+    <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #4E7A12; margin-bottom: 14px;">01 &mdash; Foundations</div>
+    <h1 style="font-size: 54px; line-height: 1.02; font-weight: 800; letter-spacing: -0.025em; color: #2A3B47; margin: 0 0 16px 0;">Color</h1>
+    <p style="font-size: 18px; line-height: 1.55; color: #41596B; margin: 0; max-width: 700px; text-wrap: pretty;">Five colors do the work. Green is energy and is used sparingly; slate does the reading. Everything else is a tint of those two.</p>
+  </div>
+
+  <div>
+    <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #41596B; padding-bottom: 12px; border-bottom: 1px solid #E7ECEF; margin-bottom: 24px;">Core palette</div>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px;">
+
+      <div style="display: flex; flex-direction: column;">
+        <div style="height: 168px; background: #8CC63F; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 17px; font-weight: 700; color: #2A3B47; margin-top: 14px;">YL Green</div>
+        <div class="mono" style="color: #41596B; margin-top: 6px; line-height: 1.7;">#8CC63F<br>140 198 63<br>PMS 376 C &#8776;</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 10px;">Accent and fill only. Buttons, rules, highlights. Never body text.</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column;">
+        <div style="height: 168px; background: #41596B; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 17px; font-weight: 700; color: #2A3B47; margin-top: 14px;">YL Slate</div>
+        <div class="mono" style="color: #41596B; margin-top: 6px; line-height: 1.7;">#41596B<br>65 89 107<br>PMS 5405 C &#8776;</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 10px;">The workhorse. Body copy, subheads, icons, secondary buttons.</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column;">
+        <div style="height: 168px; background: #2A3B47; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 17px; font-weight: 700; color: #2A3B47; margin-top: 14px;">Deep Slate</div>
+        <div class="mono" style="color: #41596B; margin-top: 6px; line-height: 1.7;">#2A3B47<br>42 59 71<br>PMS 5395 C &#8776;</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 10px;">Headlines and dark panels. The anchor at the top of the hierarchy.</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column;">
+        <div style="height: 168px; background: #97999B; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 17px; font-weight: 700; color: #2A3B47; margin-top: 14px;">YL Gray</div>
+        <div class="mono" style="color: #41596B; margin-top: 6px; line-height: 1.7;">#97999B<br>151 153 155<br>Cool Gray 7 C &#8776;</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 10px;">Watermarks, disabled states, photo overlays. Not for text on white.</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column;">
+        <div style="height: 168px; background: #231F20; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 17px; font-weight: 700; color: #2A3B47; margin-top: 14px;">Ink</div>
+        <div class="mono" style="color: #41596B; margin-top: 6px; line-height: 1.7;">#231F20<br>35 31 32<br>PMS Black 6 C &#8776;</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 10px;">One-color print, and the only safe label color on a green fill.</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #41596B; padding-bottom: 12px; border-bottom: 1px solid #E7ECEF; margin-bottom: 24px;">Supporting &amp; surfaces</div>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px;">
+
+      <div>
+        <div style="height: 92px; background: #4E7A12; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-top: 12px;">Deep Green</div>
+        <div class="mono" style="color: #41596B; margin-top: 5px;">#4E7A12</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 8px;">Text links and green type on white. 5.1:1.</div>
+      </div>
+
+      <div>
+        <div style="height: 92px; background: #5E7A8C; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-top: 12px;">Slate 60</div>
+        <div class="mono" style="color: #41596B; margin-top: 5px;">#5E7A8C</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 8px;">Captions, metadata, helper text. 4.5:1.</div>
+      </div>
+
+      <div>
+        <div style="height: 92px; background: #EDF5DE; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-top: 12px;">Green Tint</div>
+        <div class="mono" style="color: #41596B; margin-top: 5px;">#EDF5DE</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 8px;">Callout panels, highlighted table rows.</div>
+      </div>
+
+      <div>
+        <div style="height: 92px; background: #E7ECEF; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-top: 12px;">Slate Tint</div>
+        <div class="mono" style="color: #41596B; margin-top: 5px;">#E7ECEF</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 8px;">Hairlines, dividers, card borders, input strokes.</div>
+      </div>
+
+      <div>
+        <div style="height: 92px; background: #F5F7F4; border: 1px solid #D9E0E5; box-sizing: border-box;"></div>
+        <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-top: 12px;">Paper</div>
+        <div class="mono" style="color: #41596B; margin-top: 5px;">#F5F7F4</div>
+        <div style="font-size: 13px; line-height: 1.5; color: #5E7A8C; margin-top: 8px;">Page ground behind white cards. Footers.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 24px;">
+    <div style="flex-grow: 1; background: #EDF5DE; border-left: 4px solid #8CC63F; padding: 22px 26px; box-sizing: border-box;">
+      <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-bottom: 8px;">The one rule people break</div>
+      <div style="font-size: 14px; line-height: 1.6; color: #41596B;">YL Green on white is 2.05:1 &mdash; it is not readable as text at any size. Green is a <strong>fill</strong>. When you need green words, use Deep Green <span class="mono">#4E7A12</span>. When you need words on green, use Ink.</div>
+    </div>
+    <div style="flex-grow: 1; background: #F5F7F4; border-left: 4px solid #41596B; padding: 22px 26px; box-sizing: border-box;">
+      <div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-bottom: 8px;">Proportion, roughly 70 / 25 / 5</div>
+      <div style="font-size: 14px; line-height: 1.6; color: #41596B;">Seventy percent white and paper, twenty-five percent slate, five percent green. If green is the first thing you see everywhere on the page, there is too much of it.</div>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #41596B; padding-bottom: 12px; border-bottom: 1px solid #E7ECEF; margin-bottom: 20px;">Approved pairings &mdash; measured, not guessed</div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px;">
+
+      <div style="border: 1px solid #E7ECEF;">
+        <div style="height: 74px; background: #FFFFFF; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #41596B;">Slate on white</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">7.33:1</span><span style="font-size: 11px; font-weight: 700; color: #4E7A12; letter-spacing: 0.06em;">AAA</span></div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF;">
+        <div style="height: 74px; background: #8CC63F; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #231F20;">Ink on green</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">7.97:1</span><span style="font-size: 11px; font-weight: 700; color: #4E7A12; letter-spacing: 0.06em;">AAA</span></div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF;">
+        <div style="height: 74px; background: #2A3B47; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #FFFFFF;">White on deep slate</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">11.57:1</span><span style="font-size: 11px; font-weight: 700; color: #4E7A12; letter-spacing: 0.06em;">AAA</span></div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF;">
+        <div style="height: 74px; background: #2A3B47; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #8CC63F;">Green on deep slate</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">5.66:1</span><span style="font-size: 11px; font-weight: 700; color: #4E7A12; letter-spacing: 0.06em;">AA</span></div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF;">
+        <div style="height: 74px; background: #FFFFFF; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #4E7A12;">Deep green on white</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">5.10:1</span><span style="font-size: 11px; font-weight: 700; color: #4E7A12; letter-spacing: 0.06em;">AA</span></div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF;">
+        <div style="height: 74px; background: #EDF5DE; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #41596B;">Slate on green tint</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">6.53:1</span><span style="font-size: 11px; font-weight: 700; color: #4E7A12; letter-spacing: 0.06em;">AAA</span></div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF; opacity: 0.99;">
+        <div style="height: 74px; background: #FFFFFF; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #8CC63F;">Green on white</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">2.05:1</span><span style="font-size: 11px; font-weight: 700; color: #B0472A; letter-spacing: 0.06em;">NEVER</span></div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF;">
+        <div style="height: 74px; background: #8CC63F; display: flex; align-items: center; justify-content: center;"><span style="font-size: 19px; font-weight: 600; color: #FFFFFF;">White on green</span></div>
+        <div style="border-top: 1px solid #E7ECEF; padding: 9px 12px; display: flex; justify-content: space-between; align-items: center;"><span class="mono" style="color: #5E7A8C;">2.05:1</span><span style="font-size: 11px; font-weight: 700; color: #B0472A; letter-spacing: 0.06em;">NEVER</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

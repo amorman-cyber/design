@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #4E7A12; text-decoration: none; }
+    a:hover { color: #3D5F0E; text-decoration: underline; }
+    .mono { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 12px; color: #5E7A8C; letter-spacing: 0.01em; }
+    .cap { font-family: 'Archivo Narrow', 'Arial Narrow', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+    .sec { color: #41596B; padding-bottom: 12px; border-bottom: 1px solid #E7ECEF; margin-bottom: 24px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; font-family: 'Archivo', Arial, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 15px 28px; box-sizing: border-box; min-height: 48px; }
+    .lbl { font-size: 13px; color: #5E7A8C; margin-top: 12px; }
+  </style>
+</helmet>
+
+<div style="width: 1200px; height: 2100px; background: #FFFFFF; box-sizing: border-box; padding: 72px 80px 80px 80px; display: flex; flex-direction: column; gap: 52px;">
+
+  <div>
+    <div class="cap" style="color: #4E7A12; letter-spacing: 0.18em; font-size: 13px; margin-bottom: 14px;">04 &mdash; Components</div>
+    <h1 style="font-size: 54px; line-height: 1.02; font-weight: 800; letter-spacing: -0.025em; color: #2A3B47; margin: 0 0 16px 0;">Parts</h1>
+    <p style="font-size: 18px; line-height: 1.55; color: #41596B; margin: 0; max-width: 720px; text-wrap: pretty;">Squared corners, 48px minimum touch targets, one green button per view. Every control below is built from the palette on the previous page &mdash; nothing new is introduced here.</p>
+  </div>
+
+  <div>
+    <div class="cap sec">Buttons</div>
+    <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 20px; align-items: end;">
+
+      <div>
+        <div class="btn" style="background: #8CC63F; color: #231F20;">Give now
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="#231F20" stroke-width="2.2" stroke-linecap="square"><path d="M3 10h13M11 5l5 5-5 5"></path></svg>
+        </div>
+        <div class="lbl">Primary &mdash; the one ask</div>
+      </div>
+
+      <div>
+        <div class="btn" style="background: #41596B; color: #FFFFFF;">Register</div>
+        <div class="lbl">Secondary</div>
+      </div>
+
+      <div>
+        <div class="btn" style="background: #FFFFFF; color: #41596B; border: 2px solid #41596B; padding: 13px 26px;">Learn more</div>
+        <div class="lbl">Outline</div>
+      </div>
+
+      <div>
+        <div style="background: #2A3B47; padding: 14px; display: inline-block;">
+          <div class="btn" style="background: #8CC63F; color: #231F20; padding: 15px 22px;">Give now</div>
+        </div>
+        <div class="lbl">Primary on dark</div>
+      </div>
+
+      <div>
+        <div class="btn" style="background: #E7ECEF; color: #97999B; padding: 15px 28px;">Sold out</div>
+        <div class="lbl">Disabled</div>
+      </div>
+
+      <div>
+        <div style="min-height: 48px; display: flex; align-items: center;"><span style="font-size: 16px; font-weight: 600; color: #4E7A12; text-decoration: underline; text-underline-offset: 3px;">Read the full story</span></div>
+        <div class="lbl">Text link</div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 40px; align-items: flex-end; margin-top: 36px;">
+      <div>
+        <div class="btn" style="background: #8CC63F; color: #231F20; font-size: 13px; padding: 11px 20px; min-height: 40px;">Small</div>
+        <div class="lbl">40px &mdash; dense tables only</div>
+      </div>
+      <div>
+        <div class="btn" style="background: #8CC63F; color: #231F20;">Default</div>
+        <div class="lbl">48px &mdash; the floor for touch</div>
+      </div>
+      <div>
+        <div class="btn" style="background: #8CC63F; color: #231F20; font-size: 17px; padding: 20px 38px; min-height: 60px;">Large</div>
+        <div class="lbl">60px &mdash; hero and email</div>
+      </div>
+      <div style="flex-grow: 1; background: #EDF5DE; border-left: 4px solid #8CC63F; padding: 16px 20px; box-sizing: border-box; max-width: 420px;">
+        <div style="font-size: 13px; line-height: 1.6; color: #41596B;">Green buttons take <strong>Ink</strong> labels, never white &mdash; white on green is 2.05:1. Radius is 0. Uppercase, 700, 0.04em.</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="cap sec">Forms</div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px;">
+
+      <div>
+        <label style="display: block; font-size: 14px; font-weight: 600; color: #2A3B47; margin-bottom: 8px;">Camper name</label>
+        <div style="border: 1px solid #C3CDD4; background: #FFFFFF; padding: 14px 16px; font-size: 16px; color: #2A3B47; min-height: 50px; box-sizing: border-box;">Kylie Ramirez</div>
+        <div style="font-size: 13px; color: #5E7A8C; margin-top: 7px;">As it appears on their school ID.</div>
+      </div>
+
+      <div>
+        <label style="display: block; font-size: 14px; font-weight: 600; color: #2A3B47; margin-bottom: 8px;">Email address</label>
+        <div style="border: 2px solid #8CC63F; background: #FFFFFF; padding: 13px 15px; font-size: 16px; color: #2A3B47; min-height: 50px; box-sizing: border-box;">kylie@<span style="color: #97999B;">|</span></div>
+        <div style="font-size: 13px; color: #5E7A8C; margin-top: 7px;">Focused &mdash; 2px green ring.</div>
+      </div>
+
+      <div>
+        <label style="display: block; font-size: 14px; font-weight: 600; color: #2A3B47; margin-bottom: 8px;">Grade this fall</label>
+        <div style="border: 2px solid #B0472A; background: #FFFFFF; padding: 13px 15px; font-size: 16px; color: #97999B; min-height: 50px; box-sizing: border-box;">Select a grade</div>
+        <div style="display: flex; align-items: center; gap: 7px; margin-top: 7px;">
+          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="#B0472A" stroke-width="2"><circle cx="10" cy="10" r="8"></circle><path d="M10 6v5M10 14h.01"></path></svg>
+          <span style="font-size: 13px; color: #B0472A; font-weight: 500;">Required before you can continue.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 44px; margin-top: 30px; align-items: center;">
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <div style="width: 22px; height: 22px; background: #8CC63F; display: flex; align-items: center; justify-content: center;">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="#231F20" stroke-width="2.6" stroke-linecap="square"><path d="M4 10.5l4 4 8-9"></path></svg>
+        </div>
+        <span style="font-size: 15px; color: #2A3B47;">Send me the monthly newsletter</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <div style="width: 22px; height: 22px; border: 1px solid #C3CDD4; box-sizing: border-box;"></div>
+        <span style="font-size: 15px; color: #2A3B47;">Text me about last-minute openings</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <div style="width: 22px; height: 22px; border: 6px solid #41596B; border-radius: 50%; box-sizing: border-box;"></div>
+        <span style="font-size: 15px; color: #2A3B47;">One-time gift</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <div style="width: 22px; height: 22px; border: 1px solid #C3CDD4; border-radius: 50%; box-sizing: border-box;"></div>
+        <span style="font-size: 15px; color: #2A3B47;">Monthly gift</span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="cap sec">Tags, badges and counters</div>
+    <div style="display: flex; gap: 14px; align-items: center; flex-wrap: wrap;">
+      <span class="cap" style="background: #8CC63F; color: #231F20; padding: 7px 13px; letter-spacing: 0.14em;">Open</span>
+      <span class="cap" style="background: #41596B; color: #FFFFFF; padding: 7px 13px; letter-spacing: 0.14em;">Wyldlife</span>
+      <span class="cap" style="background: #EDF5DE; color: #3D5F0E; padding: 7px 13px; letter-spacing: 0.14em;">Scholarship</span>
+      <span class="cap" style="background: #E7ECEF; color: #41596B; padding: 7px 13px; letter-spacing: 0.14em;">Waitlist</span>
+      <span class="cap" style="background: #FFFFFF; color: #41596B; border: 1px solid #C3CDD4; padding: 6px 12px; letter-spacing: 0.14em;">Draft</span>
+      <span style="background: #B0472A; color: #FFFFFF; font-size: 12px; font-weight: 700; padding: 4px 9px; letter-spacing: 0.04em;">3 left</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="cap sec">Cards</div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+
+      <div style="border: 1px solid #E7ECEF; display: flex; flex-direction: column;">
+        <div style="height: 168px; background: #41596B; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <svg viewBox="0 0 104 88" width="83" height="70" style="opacity: 0.32;"><path d="M0 0 L26 0 L46 20 L46 88 L26 88 L26 42 L0 16 Z" fill="#FFFFFF"></path><path d="M53 26 L74 5 L74 67 L96 67 L104 77.5 L96 88 L53 88 Z" fill="#FFFFFF"></path></svg>
+        </div>
+        <div style="padding: 22px 24px 26px 24px;">
+          <div class="cap" style="color: #4E7A12; margin-bottom: 10px;">From the field</div>
+          <div style="font-size: 21px; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; color: #2A3B47; margin-bottom: 10px; text-wrap: pretty;">A year of Tuesdays at the same lunch table</div>
+          <div style="font-size: 15px; line-height: 1.6; color: #41596B; margin-bottom: 16px;">What showing up looks like when nothing appears to be happening.</div>
+          <span style="font-size: 15px; font-weight: 600; color: #4E7A12; text-decoration: underline; text-underline-offset: 3px;">Read Kylie&rsquo;s story</span>
+        </div>
+      </div>
+
+      <div style="border: 1px solid #E7ECEF; display: flex; flex-direction: column; justify-content: space-between; padding: 26px 24px;">
+        <div>
+          <div class="cap" style="color: #41596B; margin-bottom: 18px;">Fall 2026 &mdash; area total</div>
+          <div style="font-size: 62px; font-weight: 800; letter-spacing: -0.035em; color: #2A3B47; line-height: 1;">1,284</div>
+          <div style="font-size: 15px; color: #41596B; margin-top: 8px;">kids at club this month</div>
+          <div style="margin-top: 22px; border-top: 1px solid #E7ECEF; padding-top: 16px; display: flex; flex-direction: column; gap: 9px;">
+            <div style="display: flex; justify-content: space-between; font-size: 14px; color: #41596B;"><span>Young Life</span><span style="font-weight: 600; color: #2A3B47;">742</span></div>
+            <div style="display: flex; justify-content: space-between; font-size: 14px; color: #41596B;"><span>WyldLife</span><span style="font-weight: 600; color: #2A3B47;">396</span></div>
+            <div style="display: flex; justify-content: space-between; font-size: 14px; color: #41596B;"><span>Capernaum</span><span style="font-weight: 600; color: #2A3B47;">146</span></div>
+          </div>
+        </div>
+        <div style="margin-top: 24px;">
+          <div style="height: 8px; background: #E7ECEF; display: flex;">
+            <div style="width: 72%; background: #8CC63F;"></div>
+          </div>
+          <div style="font-size: 13px; color: #5E7A8C; margin-top: 9px;">72% of the 1,780 goal</div>
+        </div>
+      </div>
+
+      <div style="background: #2A3B47; padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 28px), calc(100% - 28px) 100%, 0 100%);">
+        <div>
+          <div class="cap" style="color: #8CC63F; margin-bottom: 14px;">Closes 14 March</div>
+          <div style="font-size: 24px; font-weight: 700; line-height: 1.2; letter-spacing: -0.012em; color: #FFFFFF; margin-bottom: 12px; text-wrap: pretty;">Camp scholarship applications are open</div>
+          <div style="font-size: 15px; line-height: 1.6; color: #C3CDD4;">No kid stays home over money. Applications take about ten minutes.</div>
+        </div>
+        <div class="btn" style="background: #8CC63F; color: #231F20; margin-top: 24px; align-self: flex-start;">Apply now</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="cap sec">Callouts</div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+      <div style="background: #EDF5DE; border-left: 4px solid #8CC63F; padding: 20px 24px; display: flex; gap: 14px;">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#4E7A12" stroke-width="2" stroke-linecap="square" style="flex-shrink: 0; margin-top: 2px;"><path d="M3 10.5l4 4 10-11"></path></svg>
+        <div><div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-bottom: 5px;">You&rsquo;re registered</div><div style="font-size: 14px; line-height: 1.6; color: #41596B;">A confirmation is on its way to the address you gave us.</div></div>
+      </div>
+      <div style="background: #F5F7F4; border-left: 4px solid #41596B; padding: 20px 24px; display: flex; gap: 14px;">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#41596B" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><circle cx="10" cy="10" r="8"></circle><path d="M10 9v5M10 6h.01"></path></svg>
+        <div><div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-bottom: 5px;">Bring a sleeping bag</div><div style="font-size: 14px; line-height: 1.6; color: #41596B;">Bunks have mattresses but no linens. Full packing list in your email.</div></div>
+      </div>
+      <div style="background: #FBEFEC; border-left: 4px solid #B0472A; padding: 20px 24px; display: flex; gap: 14px;">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#B0472A" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;"><circle cx="10" cy="10" r="8"></circle><path d="M10 6v5M10 14h.01"></path></svg>
+        <div><div style="font-size: 15px; font-weight: 700; color: #2A3B47; margin-bottom: 5px;">Payment didn&rsquo;t go through</div><div style="font-size: 14px; line-height: 1.6; color: #41596B;">Your card was declined. The spot is held for 48 hours.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="cap sec">Spacing, geometry and elevation</div>
+    <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px;">
+      <div>
+        <div style="display: flex; align-items: flex-end; gap: 10px;">
+          <div style="width: 4px; height: 4px; background: #41596B;"></div>
+          <div style="width: 8px; height: 8px; background: #41596B;"></div>
+          <div style="width: 12px; height: 12px; background: #41596B;"></div>
+          <div style="width: 16px; height: 16px; background: #41596B;"></div>
+          <div style="width: 24px; height: 24px; background: #41596B;"></div>
+          <div style="width: 32px; height: 32px; background: #41596B;"></div>
+          <div style="width: 48px; height: 48px; background: #41596B;"></div>
+          <div style="width: 64px; height: 64px; background: #41596B;"></div>
+          <div style="width: 96px; height: 96px; background: #8CC63F;"></div>
+        </div>
+        <div class="mono" style="margin-top: 14px;">4 &middot; 8 &middot; 12 &middot; 16 &middot; 24 &middot; 32 &middot; 48 &middot; 64 &middot; 96</div>
+        <div style="font-size: 13px; line-height: 1.6; color: #41596B; margin-top: 8px;">Everything sits on the 4px step. 96 is the section rhythm on desktop, 48 on mobile.</div>
+      </div>
+      <div>
+        <div style="display: flex; gap: 14px; align-items: flex-end;">
+          <div><div style="width: 72px; height: 56px; background: #E7ECEF; border-radius: 0;"></div><div class="mono" style="margin-top: 8px;">0 &mdash; default</div></div>
+          <div><div style="width: 72px; height: 56px; background: #E7ECEF; border-radius: 2px;"></div><div class="mono" style="margin-top: 8px;">2 &mdash; inputs</div></div>
+          <div><div style="width: 72px; height: 56px; background: #E7ECEF; clip-path: polygon(0 0, 100% 0, 100% 66%, 66% 100%, 0 100%);"></div><div class="mono" style="margin-top: 8px;">45&deg; cut</div></div>
+        </div>
+        <div style="font-size: 13px; line-height: 1.6; color: #41596B; margin-top: 12px;">The clipped corner is the house accent, taken from the L foot. Use it once per layout, never on a control.</div>
+      </div>
+      <div>
+        <div style="display: flex; gap: 14px;">
+          <div style="width: 84px; height: 56px; background: #FFFFFF; border: 1px solid #E7ECEF;"></div>
+          <div style="width: 84px; height: 56px; background: #FFFFFF; box-shadow: 0 2px 10px rgba(42, 59, 71, 0.13);"></div>
+        </div>
+        <div class="mono" style="margin-top: 12px;">1px #E7ECEF &nbsp;&middot;&nbsp; 0 2px 10px rgba(42,59,71,.13)</div>
+        <div style="font-size: 13px; line-height: 1.6; color: #41596B; margin-top: 8px;">Hairline first. Shadow only for things that genuinely float &mdash; menus, modals, sticky bars.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
