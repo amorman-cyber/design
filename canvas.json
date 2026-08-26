@@ -1,17 +1,87 @@
 {
   "pages": [
-    { "id": "page-1", "name": "Foundations" },
-    { "id": "page-2", "name": "Applied" }
+    {
+      "id": "page-1",
+      "name": "Foundations"
+    },
+    {
+      "id": "page-2",
+      "name": "Applied"
+    }
   ],
   "artboards": [
-    { "file": "Main.dc.html",       "x": 0,    "y": 0,    "w": 1200, "h": 840,  "page": "page-1", "title": "Overview" },
-    { "file": "Color.dc.html",      "x": 1280, "y": 0,    "w": 1200, "h": 1660, "page": "page-1", "title": "01 Color" },
-    { "file": "Typography.dc.html", "x": 2560, "y": 0,    "w": 1200, "h": 2000, "page": "page-1", "title": "02 Typography" },
-    { "file": "Logos.dc.html",      "x": 3840, "y": 0,    "w": 1320, "h": 1730, "page": "page-1", "title": "03 The mark" },
-    { "file": "Components.dc.html", "x": 0,    "y": 2200, "w": 1200, "h": 2100, "page": "page-2", "title": "04 Parts" },
-    { "file": "Email.dc.html",      "x": 1280, "y": 2200, "w": 720,  "h": 1930, "page": "page-2", "title": "05 Email template" },
-    { "file": "Mobile.dc.html",     "x": 2080, "y": 2200, "w": 390,  "h": 844,  "page": "page-2", "title": "06 Phone" },
-    { "file": "Landing.dc.html",    "x": 2560, "y": 2200, "w": 1440, "h": 2270, "page": "page-2", "title": "07 Landing page" }
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1200,
+      "h": 840,
+      "page": "page-1",
+      "title": "Overview"
+    },
+    {
+      "file": "Color.dc.html",
+      "x": 1280,
+      "y": 0,
+      "w": 1200,
+      "h": 1870,
+      "page": "page-1",
+      "title": "01 Color"
+    },
+    {
+      "file": "Typography.dc.html",
+      "x": 2560,
+      "y": 0,
+      "w": 1200,
+      "h": 2000,
+      "page": "page-1",
+      "title": "02 Typography"
+    },
+    {
+      "file": "Logos.dc.html",
+      "x": 3840,
+      "y": 0,
+      "w": 1320,
+      "h": 1780,
+      "page": "page-1",
+      "title": "03 The mark"
+    },
+    {
+      "file": "Components.dc.html",
+      "x": 0,
+      "y": 2200,
+      "w": 1200,
+      "h": 2100,
+      "page": "page-2",
+      "title": "04 Parts"
+    },
+    {
+      "file": "Email.dc.html",
+      "x": 1280,
+      "y": 2200,
+      "w": 720,
+      "h": 1930,
+      "page": "page-2",
+      "title": "05 Email template"
+    },
+    {
+      "file": "Mobile.dc.html",
+      "x": 2080,
+      "y": 2200,
+      "w": 390,
+      "h": 844,
+      "page": "page-2",
+      "title": "06 Phone"
+    },
+    {
+      "file": "Landing.dc.html",
+      "x": 2560,
+      "y": 2200,
+      "w": 1440,
+      "h": 2270,
+      "page": "page-2",
+      "title": "07 Landing page"
+    }
   ],
   "annotations": [
     {
@@ -20,7 +90,7 @@
       "x": 0,
       "y": -220,
       "w": 620,
-      "text": "Source: the e2ma email link is blocked by this session's network policy, so the palette is read straight off the four supplied logo files rather than from the email. If the greens or slates in the email differ, change them here first — everything else is a tint of these two."
+      "text": "Source: the e2ma email link is blocked by this session's network policy, so the palette is read straight off the four supplied logo files rather than from the email. If the greens or slates in the email differ, change them here first \u2014 everything else is a tint of these two."
     },
     {
       "id": "wordmark-note",
@@ -28,7 +98,7 @@
       "x": 3840,
       "y": -220,
       "w": 620,
-      "text": "The YL monogram is drawn as vector here and scales cleanly. The \"younglife\" wordmark and tagline are SET IN TYPE (Archivo / Archivo Narrow) as a stand-in — drop in the official wordmark artwork before anything goes to print."
+      "text": "The YL monogram is drawn as vector here and scales cleanly. The \"younglife\" wordmark and tagline are SET IN TYPE (Archivo / Archivo Narrow) as a stand-in \u2014 drop in the official wordmark artwork before anything goes to print."
     },
     {
       "id": "placeholder-note",
@@ -36,8 +106,11 @@
       "x": 0,
       "y": 2000,
       "w": 700,
-      "text": "Anything in [SQUARE BRACKETS] is a placeholder for a real fact — area name, dates, phone, dollar figures, photography. The copy around them is drafted and safe to use or rewrite."
+      "text": "Anything in [SQUARE BRACKETS] is a placeholder for a real fact \u2014 area name, dates, phone, dollar figures, photography. The copy around them is drafted and safe to use or rewrite."
     }
   ],
-  "launch": { "view": "canvas", "page": "page-1" }
+  "launch": {
+    "view": "canvas",
+    "page": "page-1"
+  }
 }
